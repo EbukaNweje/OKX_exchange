@@ -67,7 +67,8 @@ height: 90vh;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #16243D;
+/* background-color: #16243D; */
+/* background-color: white; */
 opacity: 90%;
 padding: 0px 0 30px 0;
 
@@ -86,7 +87,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 /* padding: 0px 0 30px 0; */
-background-image: url(${slider});
+/* background-image: url(${slider}); */
+background-color: white; 
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
@@ -109,7 +111,7 @@ flex-direction: column;
 const H1 = styled.div`
 font-size: 35px;
 font-weight: bold;
-color: lightgrey;
+color: black;
 margin-top: 40px
 `;
 const CardHold = styled.div`

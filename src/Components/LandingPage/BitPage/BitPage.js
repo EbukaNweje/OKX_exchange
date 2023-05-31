@@ -29,7 +29,8 @@ height: auto;
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: #0F192C;
+/* background-color: #0F192C; */
+background-color: white;
 padding: 30px 0;
 `;
 
@@ -69,7 +70,7 @@ width: 100%;
 height: auto;
 margin: 35px 0;
 display: flex;
-justify-content: space-between;
+justify-content: space-around;
 
 @media Screen and (max-width: 768px){
     flex-direction: column;
@@ -88,7 +89,7 @@ color: whitesmoke;
 `;
 const Button = styled(Link)`
 width: 130px;
-height: auto;
+height: 40px;
 padding: 10px 20px;
 background-color: #015ec9;
 border-radius: 0.5rem;
@@ -100,5 +101,8 @@ font-weight: bold;
 color: #fff;
 cursor: pointer;
 text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
 `;
 

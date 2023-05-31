@@ -4,13 +4,15 @@ import {Link} from 'react-router-dom'
 export const Container = styled.div`
 width: 100%;
 height: 110px;
-// background-color:  #111D32;
-background: linear-gradient(45deg, #015ec9,  #a60a0a);
+/* background: linear-gradient(45deg, #015ec9,  #a60a0a); */
+background-color: white;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 z-index: 1000;
+/* position: fixed; */
+
 /* display: none; */
 @media Screen and (max-width: 768px){
     height: 70px;
@@ -26,9 +28,10 @@ display: flex;
 align-items: center;
 justify-content: center;
 height: 85%;
-background: linear-gradient(45deg, #111D32,#000911c3);
+background: linear-gradient(45deg, #ffffff,#ffffff);
 @media Screen and (max-width: 768px){
-    background: none;
+    background: white;
+    height: 100%;
 }
 `;
 export const Wrapper1 = styled.div`
@@ -61,6 +64,7 @@ z-index: 500;
 @media Screen and (max-width: 768px){
     width: 92%;
     top: 250px;
+    /* background-color: white; */
 }
 
 `;
@@ -84,6 +88,7 @@ display: none;
     margin-right: 50px;
 }
 `;
+
 export const Header1 = styled.div`
 width: 75%;
 display: flex;
@@ -157,11 +162,12 @@ margin-right: 30px;
     width: 85%;
     justify-content: space-between;
     height: 70px;
+    background-color: white;
 }
 
 `;
 export const LogoHold = styled.div`
-width: 15%;
+width: 25%;
 height: 150px;
 display: flex;
 justify-content: center;
@@ -173,29 +179,39 @@ align-items: center;
     margin-left: 30px;
 }
 `;
-export const Logo = styled.img`
-width: 100%;
-height: 100%;
-margin-top: 20px;
+// export const Logo = styled.img`
+// width: 100%;
+// height: 100%;
+// margin-top: 20px;
 
-@media Screen and (max-width: 768px){
-width: 400px;
-height: 100px;
-margin-left: 50px;
-margin-top: 0px;
+// @media Screen and (max-width: 768px){
+// width: 400px;
+// height: 100px;
+// margin-left: 50px;
+// margin-top: 0px;
 
-}
+// }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-`;
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+// `;
+export const H1 = styled.div`
+ font-size: 25px;
+ font-weight: 3500;
 
+
+ @media Screen and (max-width: 425px){
+    font-size: 15px;
+    width: 300px;
+ }
+`
 export const NavHold = styled.div`
 width: 70%;
-background-color: #0F192C;
+/* background-color: #0F192C; */
+
 border-radius: 0.3rem;
 display: flex;
 justify-content: space-between;
@@ -207,7 +223,7 @@ height: 40%;
 }
 `;
 export const Nav = styled(Link)`
-color: whitesmoke;
+color: black;
 font-size: 13px;
 font-weight: 400;
 font-family: sans-serif;
@@ -221,7 +237,7 @@ export const Login = styled(Link)`
 border: none;
 outline: none;
 background: none;
-color: aliceblue;
+color: black;
 font-size: 13px;
 font-weight: bold;
 cursor: pointer;
@@ -276,7 +292,7 @@ font-weight: bold;
 export const Line = styled.div`
 width: 1px;
 height: 100%;
-background-color: aliceblue;
+background-color: black;
 `;
 
 // background-image: linear-gradient(to right, #aa05a8, #212121);

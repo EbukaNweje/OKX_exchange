@@ -14,7 +14,7 @@ const Footer = () => {
     <Container>
         <Wrapper>
             <LeftDiv>
-                <Logo>Preeminent crypfield @2015</Logo>
+                <Logo>OKX Exchange @2015</Logo>
                 {/* <Dot></Dot>
                 <Span to='/news'>News</Span>
                 <Dot></Dot>

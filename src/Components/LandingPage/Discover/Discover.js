@@ -183,7 +183,8 @@ color: silver;
 `;
 
 const Button = styled(Link)`
-background-color: #a60a0a;
+/* background-color: #a60a0a; */
+background-color: #015ec9;
 width: 30%;
 padding: 0.8rem 0.2rem;
 text-align: center;

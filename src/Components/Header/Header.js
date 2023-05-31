@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { Container, Header2, Line, Login, Logo, LogoHold, Nav, NavHold,SignUp,Wrapper,BurgerHold, NavDiv} from './HeaderStyle';
+import { Container, Header2, Line, Login,H1, LogoHold, Nav, NavHold,SignUp,Wrapper,BurgerHold, NavDiv} from './HeaderStyle';
 import {AiOutlineMenu} from 'react-icons/ai'
 import {BsFillPersonFill} from 'react-icons/bs'
-import logo from './preeminentlogo.png'
+// import logo from './preeminentlogo.png'
 import SideNav from "./SideNav";
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import DashHeader from "./DashHeader";
+// import EthScroll from "../LandingPage/EthScroll";
 // import {useNavigate} from 'react-router-dom'
 
 const Header = () =>{
@@ -28,6 +29,7 @@ const Header = () =>{
 
     return(
         <Container>
+             {/* <EthScroll/> */}
             {/* <Wrapper1>
             <Header1>
                     <Left>
@@ -54,12 +56,14 @@ const Header = () =>{
             <Wrapper>
             <Header2>
                     <LogoHold>
-                        <Logo src={logo} alt="logo"/>
+                        {/* <Logo src={logo} alt="logo"/> */}
+                        <H1>OKX EXCHANGE</H1>
                     </LogoHold>
                     
                     {UserData? <Nav onClick={() =>{
                             deleteUser();
-                        }}  to='/' style={{color: "#fff", fontWeight: "bold", fontSize: "20px", display: "flex", alignItems: "center"}}> <BsFillPersonFill/> Sign Out</Nav>  : <>
+                        }}  to='/' style={{color: "#fff", fontWeight: "bold", fontSize: "20px", display: "flex", alignItems: "center"}}> <BsFillPersonFill/> Sign Out</Nav>  : 
+                        <>
                         <NavHold>
                         <Nav to='/'>Home</Nav>
                         <Nav to='/aboutus'>About Us</Nav>
@@ -70,7 +74,8 @@ const Header = () =>{
                         <Line></Line>
                         <Login to='/login'>login</Login>
                         <SignUp to='/register'>SignUp</SignUp>
-                    </NavHold></>
+                    </NavHold>
+                    </>
                     }
             </Header2>
             <BurgerHold onClick={() =>{

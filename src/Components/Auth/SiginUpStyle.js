@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import mainslider from './mailslide.jpg';
-import {Link} from 'react-router-dom'
+// import mainslider from './mailslide.jpg';
+import mainslider from "./Insurance.png"
+import { Link } from 'react-router-dom'
 
 
 export const Span = styled.div`
@@ -31,12 +32,13 @@ display: flex;
 justify-content: center;
 align-items: center;
  /* z-index: -1; */
-background:
-linear-gradient(45deg,  #030e21cf, #031128a9),
+/* background:
+linear-gradient(90deg,  #ffffff, #ffffff),
  url(${mainslider});
+ 
 background-position: center;
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat; */
 
 @media Screen and (max-width: 768px){
     width: 100%;
@@ -49,6 +51,12 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    background:
+linear-gradient(45deg,  #031128a9, #ffffff),
+ url(${mainslider});
+ background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
     height: 100%;
     padding: 30px 0;
 `;

@@ -9,7 +9,7 @@ const UpdateUser = ({Display}) => {
   const [last, setLast] = useState("")
   console.log(setLast)
 
-    const url = `https://preeminent-crypfield.onrender.com/api/alluserdata`
+    const url = `https://ebukabackend.onrender.com/api/alluserdata`
   
     useEffect(()=>{
       Axios.get(url)

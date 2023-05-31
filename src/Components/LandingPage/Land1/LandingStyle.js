@@ -2,6 +2,7 @@ import styled from "styled-components";
 // import mainslider from "./bit1.jpg"
 import mainslider from "./slider1.jpg"
 import { Link } from "react-router-dom";
+import Bit from "./MainPage.jpg"
 //#072847 #193B56
 
 export const Container = styled.div`
@@ -13,7 +14,7 @@ align-items: center;
 position: relative;
 /* z-index: -1; */
 /* background:linear-gradient(45deg,  #7a12125b, #7a1212), url(${mainslider}); */
-background:linear-gradient(45deg, #015ec989,  #a60a0a8f), url(${mainslider});
+background:linear-gradient( #015ec989,  #015ec989), url(${Bit});
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;

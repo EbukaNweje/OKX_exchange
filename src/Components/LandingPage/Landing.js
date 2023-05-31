@@ -16,7 +16,7 @@ import News from './News/News'
 import Discover from './Discover/Discover'
 import Assetcryp from './AssetCryp/Assetcryp'
 import Land9 from './Land9/Land9'
-import EthScroll from './EthScroll'
+// import EthScroll from './EthScroll'
 import BitPage from './BitPage/BitPage';
 
 
@@ -42,8 +42,9 @@ const Landing = () => {
   ariaLabel='falling-lines-loading'
 />
         {/* <SpinnerCircular size={45} thickness={100} speed={100} color="rgba(255, 255, 255, 1)" secondaryColor="rgba(0, 0, 0, 0.44)" />  */}
+        
        </Div> : <>
-       <EthScroll/>
+       {/* <EthScroll/> */}
       <LandingPage/>
       <Land2/>
       <Land3/>

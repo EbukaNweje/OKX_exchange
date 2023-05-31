@@ -7,7 +7,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 /* background-color: #56111A; */
-background-color: #0F192C;
+/* background-color: #0F192C; */
+background-color: white;
 padding: 5rem 0;
 
 @media Screen and (max-width: 1280px){
@@ -85,7 +86,7 @@ export const Img = styled.img`
 export const H1 = styled.div`
 font-size: 35px;
 font-weight: bold;
-color: white;
+color: black;
 margin-bottom: 40px;
 `;
 export const P = styled.div`

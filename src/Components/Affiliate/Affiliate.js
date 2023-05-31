@@ -13,7 +13,7 @@ const Affiliate = () => {
   return (
     <Container>
         <Wrapper>
-            <H1 data-aos="fade-down">Preeminent crypfield Affiliate program is more  <span style={{color: "#015ec9"}}>profitable</span> with friends.</H1>
+            <H1 data-aos="fade-down">OKX Exchange Affiliate program is more  <span style={{color: "#015ec9"}}>profitable</span> with friends.</H1>
             <Advice>
                 <Cont>
                     <Title data-aos="fade-down">Get your link</Title>
@@ -75,7 +75,7 @@ export default Affiliate;
 const Container = styled.div`
 width: 100%;
 height: auto;
-background-color: #16243D;
+background-color: #ffffff;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -97,7 +97,7 @@ align-items: center;
 const H1 = styled.div`
 font-size: 35px;
 font-weight: 500;
-color:  lightgrey;
+color:  black;
 margin-top: -10px;
 /* margin: 5px 0 10px 0; */
 
@@ -118,13 +118,13 @@ margin: 50px 0 40px 0;
 }
 `;
 const Cont = styled.div`
-color: lightgrey;
+color:  black;
 margin: 10px 0;
 `;
 const Title = styled.div`
 font-size: 17px;
 font-weight: 500;
-color: lightgrey;
+color:  black;
 `;
 const Next = styled.div`
 margin-top: 30px;
@@ -143,7 +143,7 @@ const Login = styled(Link)`
 color: #fff;
 /* background-color: #015FC9; */
 /* background-color: #FFCC40; */
-background-color: #a60a0a;
+background-color: #015ec9;
 border-radius: 5px;
 cursor: pointer;
 padding: 0.5rem 2rem;
@@ -162,7 +162,7 @@ font-weight: bold;
 const Signup = styled(Link)`
 color: #fff;
 /* background-color: #015FC9; */
-background-color: #a60a0a;
+background-color: #015ec9;
 border-radius: 5px;
 cursor: pointer;
 padding: 0.5rem 2rem;
@@ -195,7 +195,7 @@ justify-content: space-between;
 }
 `;
 const Content = styled.div`
-color:  lightgrey;
+color: black;
 width: 30%;
 @media Screen and (max-width :1280px){
     width: 30%;

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import mainslider from './mailslide.jpg'
+// import mainslider from './mailslide.jpg'
+import mainslider from "./Insurance.png"
 import {Link} from 'react-router-dom'
 
 
@@ -25,10 +26,11 @@ justify-content: center;
 align-items: center;
 /* position: relative; */
 /* z-index: -1; */
-background:linear-gradient(45deg,  #030e21cf, #031128a9), url(${mainslider});
+/* background:linear-gradient(45deg,  #030e21cf, #031128a9), url(${mainslider}); */
+/* background-color: white;
 background-position: center;
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat; */
 
 @media Screen and (max-width: 768px){
     width: 100%;
@@ -41,7 +43,12 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     height: 80%;
-
+    background:
+linear-gradient(45deg,  #031128a9, #ffffff),
+ url(${mainslider});
+ background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
     @media Screen and (max-width: 768px){
         /* width: 80% */
     }

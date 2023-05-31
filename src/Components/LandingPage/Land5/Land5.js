@@ -24,7 +24,7 @@ const Land5 = () =>{
                     <Left>
                     <Trade data-aos="fade-down">
                      <Img src={arr} alt='arr left'/>
-                     <h4>OUR PACKAGE</h4>
+                     <h4 style={{color: "black"}}>OUR PACKAGE</h4>
                      <Img src={arr2} alt='arr right'/>
                     </Trade>
                      <H1 data-aos="fade-down">Investing Now<br/> Available to everyone.</H1>

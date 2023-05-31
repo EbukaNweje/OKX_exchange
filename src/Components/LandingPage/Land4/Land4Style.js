@@ -4,8 +4,9 @@ import styled from "styled-components";
 export const Container = styled.div`
 width: 100%;
 height: 100vh;
-background-color: #111D32;
+/* background-color: #111D32; */
 /* background-color: #56111A; */
+background-color: white;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -142,6 +143,11 @@ cursor: pointer;
 color: aliceblue;
 font-size: 17px;
 text-decoration: none;
+width: 120px;
+height: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
 
 @media Screen and (max-width: 1280px){
 padding: 0.3rem 2rem;
@@ -192,11 +198,11 @@ export const Img = styled.img`
 export const H1 = styled.div`
 font-size: 35px;
 font-weight: bold;
-color: #fff;
+color: #000000;
 margin-bottom: 40px;
 `;
 export const ButtonHold = styled.div`
-width: 70%;
+width: 80%;
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -253,5 +259,6 @@ opacity: 90%;
 `;
 
 export const P = styled.div`
-color: lightgrey;
+color: black;
+margin-top: 10PX;
 `;

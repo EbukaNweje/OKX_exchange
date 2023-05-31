@@ -6,7 +6,7 @@
   height: 40vmin;
   pointer-events: none;
   color: #7a121281;
-background-color: #56111aa8;
+/* background-color: #56111aa8; */
   color: #015ec9,  #a60a0a8f;
 }
 
@@ -17,7 +17,7 @@ background-color: #56111aa8;
 }
 
 .App-header {
-  background-color: #16243dc2;
+  /* background-color: #16243dc2; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,7 +25,7 @@ background-color: #56111aa8;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #ffffff6d;
-background: linear-gradient(45deg,  #030e21cf, #031128a9);
+/* background: linear-gradient(45deg,  #030e21cf, #031128a9); */
 box-shadow: rgba(17, 132, 194, 0.2) 0px 2px 8px 0px;
 
 box-shadow: rgba(197, 197, 255, 0.25) 0px 2px 5px -1px, rgba(80, 80, 80, 0.3) 0px 1px 3px -1px;

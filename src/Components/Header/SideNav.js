@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import styled from 'styled-components';
 // import {AiOutlineCloseSquare} from 'react-icons/bs';
 import {Link} from 'react-router-dom';
-import LogoBg from './preeminentlogo.png';
+// import LogoBg from './preeminentlogo.png';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -16,10 +16,11 @@ const SideNav = ({setNav}) =>{
         <Container>
             <Wrapper>
             <Wrapp>
-            <Logo src={LogoBg} alt='logo'/>
+            {/* <Logo src={LogoBg} alt='logo'/> */}
+            <H2>OKX EXCHANGE</H2>
         <Button data-aos="fade-left" onClick={()=>{
                 setNav(false);
-            }}  style={{border: "none", background: "none", width: 50, height: 50}}> X
+            }}  style={{border: "none", background: "none", width: 50, height: 50, color: "black"}}> X
             </Button>
             </Wrapp>
                 <MidNav>
@@ -74,10 +75,10 @@ const SideNav = ({setNav}) =>{
 }
 export default SideNav;
 
-const Logo = styled.img`
-width: 50%;
-margin-left: 10px;
-`;
+// const Logo = styled.img`
+// width: 50%;
+// margin-left: 10px;
+// `;
 
 const Div = styled.div`
 /* background-color: blanchedalmond; */
@@ -88,7 +89,7 @@ justify-content: center;
 
 const Line = styled.div`
 width: 230px;
-background-color: #fff;
+background-color: black;
 height: 1px;
 margin-bottom: 30px;
 `;
@@ -113,11 +114,16 @@ const Button = styled.button`
   }
 
 `;
-
+const H2 = styled.div`
+font-size: 25px;
+ font-weight: 400;
+ margin-left: 10px;
+`
 const Container = styled.div`
     width: 83%;
     height: 100vh;
-    background-color: #05203D;
+    /* background-color: #05203D; */
+    background-color: white;
     transition: all 2s;
     left: 0;
     right :0;
@@ -161,7 +167,7 @@ const MidNav = styled.div`
 `;
 
 const Span = styled(Link)`
-            color: #fff;
+            color: black;
             text-decoration: none;
             font-size: 20px;
             font-family: monospace;

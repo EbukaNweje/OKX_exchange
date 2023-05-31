@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 width: 100%;
-background-color: #0F192C;
+/* background-color: #0F192C; */
+background-color: white;
 height: auto;
 display: flex;
 justify-content: center;
@@ -54,7 +55,7 @@ export const Img = styled.img`
 export const H1 = styled.div`
 font-size: 35px;
 font-weight: bold;
-color: white;
+color: black;
 margin-bottom: 40px;
 `;
 

@@ -21,19 +21,19 @@ const AssetCryp = () => {
                 <Div>
                     <IconHold data-aos="flip-down"><AiOutlinePercentage style={{width: 35, height: 35}}/></IconHold>
                     <H4>INSTITUTIONAL INVESTMENT</H4>
-                    <span>When you select preeminent crypfield to manage institutional assets, you will generate a better ROI</span>
+                    <span style={{color: "black"}}>When you select preeminent crypfield to manage institutional assets, you will generate a better ROI</span>
                 </Div>
                 <Line></Line>
                 <Div>
                     <IconHold><AiOutlinePropertySafety style={{width: 35, height: 35}}/></IconHold>
                     <H4>REAL ASSETS</H4>
-                    <span>Investors looking to add a broad real assets allocation to their private markets</span>
+                    <span style={{color: "black"}}>Investors looking to add a broad real assets allocation to their private markets</span>
                 </Div>
                 <Line></Line>
                 <Div>
                     <IconHold  data-aos="flip-down"><AiOutlineQuestion style={{width: 35, height: 35}}/></IconHold>
                     <H4>ALTERNATIVES</H4>
-                    <span>As a pioneer in alternative investing., preeminent crypfield has a long track record of managing investors money</span>
+                    <span style={{color: "black"}}>As a pioneer in alternative investing., preeminent crypfield has a long track record of managing investors money</span>
                 </Div>
             </Bottom>
         </Wrapper>
@@ -46,7 +46,8 @@ export default AssetCryp;
 const Container = styled.div`
 width: 100%;
 height: 80vh;
-background-color: #111D32;
+/* background-color: #111D32; */
+background-color: white;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -83,11 +84,12 @@ margin-top: 60px;
 const H1 = styled.div`
 font-size: 30px;
 font-weight: 500;
-color: #FDBA43;
+/* color: #FDBA43; */
+color: black;
 margin-bottom: 20px;
 `;
 const H4 = styled.div`
-color: #FDBA43;
+color: black;
 font-size: 20px;
 margin-bottom: 10px;
 font-weight: 500;
@@ -99,7 +101,7 @@ font-weight: 500;
 const P = styled.div`
 font-size: 23px;
 font-weight: lighter;
-color : whitesmoke;
+color: black;
 `;
 const Div = styled.div`
 width: 30%;

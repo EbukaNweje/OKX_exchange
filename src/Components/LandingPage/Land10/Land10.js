@@ -18,9 +18,9 @@ const Hero3 = () => {
         <Holder>
         <Wrapper>
             <Div1>
-                <H1 data-aos="fade-down">Putting our investors first is <span style={{textDecoration: "10px solid orange"}}>Key</span></H1>
+                <H1 data-aos="fade-down">Putting our investors first is Key</H1>
                 <H4>We are committed to providing all our investors with exceptional service while offering our team the best training.</H4>
-                <P data-aos="fade-down">The preeminent crypfield is an International online broker that has been actively operating in the Crypto & Stocks Trading trading markets. With our advanced, web-based trading platform, you can trade on the largest lists of assets in the industry. From Currency pairs, and Commodities to stocks and indices, we have it all. Keep your trading costs down with competitive spreads, commissions and low margins. View spreads on our most popular cash instruments.</P>
+                <P data-aos="fade-down">The OKX Exchange is an International online broker that has been actively operating in the Crypto & Stocks Trading trading markets. With our advanced, web-based trading platform, you can trade on the largest lists of assets in the industry. From Currency pairs, and Commodities to stocks and indices, we have it all. Keep your trading costs down with competitive spreads, commissions and low margins. View spreads on our most popular cash instruments.</P>
             </Div1>
             <Div2>
                 <H1 data-aos="fade-down">Experience more than Trading.</H1>
@@ -30,7 +30,7 @@ const Hero3 = () => {
             {/* <Arrow/> */}
             <Line></Line>
             <Div3>
-                <H1 data-aos="fade-down" style={{color: "#FDBA43"}}>Investment plans that suits your personality</H1>
+                <H1 data-aos="fade-down" style={{color: "#015ec9"}}>Investment plans that suits your personality</H1>
                 <P data-aos="fade-down">We create value by sticking to our consistent investment philosophy and disciplined research process</P>
                 <BoxHold>
                 <Box data-aos="fade-down">
@@ -72,10 +72,11 @@ font-weight: bold;
 const Container = styled.div`
 width: 100%;
 height: auto;
-background-image:url(${slider1});
-background-position: center;
+/* background-image:url(${slider1}); */
+background-color: white;
+/* background-position: center;
 background-size: cover;
-background-repeat: no-repeat;
+background-repeat: no-repeat; */
 /* padding: 100px 0; */
 display: flex;
 justify-content: center;
@@ -88,7 +89,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 100px 0;
-background-color:#111D32;
+/* background-color:#111D32; */
 opacity: 90%;
 
 `;
@@ -103,17 +104,17 @@ const Div1 = styled.div`
 text-align: center;
 `;
 const H1 = styled.div`
-color: #FDBA43;
+color: #015ec9;
 font-size: 35px;
 font-weight: 500;
 `;
 const H4 = styled.div`
 font-size: 25px;
-color: lightgrey;
+color: black;
 margin-top: 15px;
 `;
 const P = styled.div`
-color: lightgrey;
+color: black;
 margin-top: 15px;
 `;
 const Div2 = styled.div`

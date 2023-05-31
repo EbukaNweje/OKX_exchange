@@ -133,7 +133,8 @@ margin-left : 20px;
 // `;
 const Button = styled(Link)`
 /* background-color: #015FC9; */
-background-color: #a60a0a;
+/* background-color: #a60a0a; */
+background-color: #015FC9;
 width: 70%;
 padding: 1.1rem 0.2rem;
 text-align: center;

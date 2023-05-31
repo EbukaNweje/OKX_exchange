@@ -19,7 +19,7 @@ const Footer = () => {
 
   return (
     <Container>
-        <H1>preeminent crypfield</H1>
+        <H1>okx exchange</H1>
         <Line3>
             <Col1>
                 <span style={{fontWeight: "bold", fontSize: "20px", marginBottom: "10px", color: "#E5AC44"}}>Market</span>
@@ -47,9 +47,9 @@ const Footer = () => {
             <Col3>
             <span style={{fontWeight: "bold", fontSize: "20px", marginBottom: "10px", color: "#E5AC44"}}>Contact Information</span>
                 <a href="/support">FAQ's</a>
-                <div>preeminent crypfield<br/>@gmail.com</div>
+                <div>okx exchange<br/>@gmail.com</div>
                 <br/>
-                <a href="/support">preeminent crypfield.com</a>
+                <a href="/support">okxexchange.com</a>
                 <a href="/faqdet">Reports</a>
             </Col3>
         </Line3>

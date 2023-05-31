@@ -6,8 +6,9 @@ export const Container = styled.div`
 width: 100%;
 height: max-content;
 /* background-color: #05203D; */
-background-color: #111D32;
+/* background-color: #111D32; */
 /* background-color: #4C3B59; */
+background-color: #ffffff;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -64,7 +65,7 @@ transition: all 400ms;
 `;
 export const Card = styled.div`
 width: 30%;
-height: 83%;
+/* height: 300px; */
 background-color: #0B1526;
 border-radius: 0.2rem;
 box-shadow:   rgb(0 0 0 / 50%) 0px 1px 10px 0px, rgb(27 31 35 / 25%) 0px 0px 0px 1px;
@@ -141,7 +142,12 @@ width: 80%;
 `;
 
 export const Div2 = styled.div`
-
+height: 200px;
+width: 100%;
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+text-align: left;
 @media Screen and (max-width :1024px){
 margin-top: 0;
 padding-bottom: 1rem;
