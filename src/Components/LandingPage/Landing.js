@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import styled from 'styled-components';
-import logo from './preeminentlogo.png'
+// import logo from './preeminentlogo.png'
 import { FallingLines } from  'react-loader-spinner'
 // import { SpinnerCircular } from 'spinners-react';
 import LandingPage from './Land1/LandingPage'

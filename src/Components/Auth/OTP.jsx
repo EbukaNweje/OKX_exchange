@@ -23,7 +23,7 @@ const OTP = () => {
   const {verifyid} = useParams()
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState({ error: false, msg:""});
-  // console.log(message)
+  console.log(message)
   const [otpinput, setOtpinput] = useState("");
   const [errorotp, setErrorotp] = useState(false);
   // const [otpinput3, setOtpinput3] = useState("");
