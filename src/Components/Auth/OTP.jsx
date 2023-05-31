@@ -23,7 +23,7 @@ const OTP = () => {
   const {verifyid} = useParams()
   const [loading, setLoading] = useState(false)
   const [message, setMessage] = useState({ error: false, msg:""});
-  console.log(message)
+  // console.log(message)
   const [otpinput, setOtpinput] = useState("");
   const [errorotp, setErrorotp] = useState(false);
   // const [otpinput3, setOtpinput3] = useState("");
@@ -62,13 +62,13 @@ const OTP = () => {
   //   `;
   //   console.log(otp);
   const otp1 = otpinput;
-  console.log(otp1);
+  // console.log(otp1);
 
   const navigate = useNavigate();
   const url = `https://ebukabackend.onrender.com/api/verifyotp/${verifyid}`
   const url2 = `https://ebukabackend.onrender.com/api/resetotp/${verifyid}`
 
-    console.log(verifyid);
+    // console.log(verifyid);
 
     const Verified = (e) => {
         e.preventDefault()
