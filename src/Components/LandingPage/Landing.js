@@ -34,9 +34,10 @@ const Landing = () => {
     <div>
       {
         loading? <Div>
-          <Logo src={logo} alt="logo"/>  
+          {/* <Logo src={logo} alt="logo"/>   */}
+          <H1>OKX EXCHANGE</H1>
           <FallingLines
-      color="#fff"
+      color="blue"
     width="100"
     visible={true}
   ariaLabel='falling-lines-loading'
@@ -66,14 +67,18 @@ const Landing = () => {
 }
 
 export default Landing;
-
+const H1 = styled.div`
+font-size: 40px;
+font-weight: bold;
+`
 const Div = styled.div`
 width: 100%;
 height: 100vh;
 position: fixed;
 z-index: 100000;
 background-color: #101C30;
-background:linear-gradient(45deg, #015ec9,  #f14455);
+/* background:linear-gradient(45deg, #015ec9,  #f14455); */
+background-color: white;
 top: 0;
 display: flex;
 flex-direction: column;
