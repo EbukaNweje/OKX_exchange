@@ -174,9 +174,9 @@ justify-content: center;
 align-items: center;
 
 @media Screen and (max-width: 768px){
-    width: 35%;
+    width: 50%;
     height: auto;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 `;
 // export const Logo = styled.img`
@@ -200,12 +200,13 @@ align-items: center;
 // `;
 export const H1 = styled.div`
  font-size: 25px;
- font-weight: 3500;
+ font-weight: bold;
 
 
  @media Screen and (max-width: 425px){
     font-size: 15px;
     width: 300px;
+    font-weight: bolder;
  }
 `
 export const NavHold = styled.div`

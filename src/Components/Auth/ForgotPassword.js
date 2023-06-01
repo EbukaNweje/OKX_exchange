@@ -25,7 +25,7 @@ const ForgotPassword = () => {
 
   console.log(message);
   
-  const url = "https://ebukabackend.onrender.com/api/forgotpassword"
+  const url = "https://okx-backend.onrender.com/api/forgotpassword"
 const Data = {email}
 console.log(url)
 console.log(Data)

@@ -12,7 +12,7 @@ const Sendrequest = () => {
     const [msg, setmsg] = useState("")
 
     const data = {supportDepartment, email, userName, appealHeader, msg}
-    const url = "https://preeminent-crypfield.onrender.com/api/contact"
+    const url = "https://okx-backend.onrender.com/api/contact"
 
 
     const sendmsg = (e) => {

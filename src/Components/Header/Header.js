@@ -81,7 +81,7 @@ const Header = () =>{
             <BurgerHold onClick={() =>{
           setNav(!nav)
         }}> 
-          <AiOutlineMenu style={{color: "#0CE0FF", width: 15, height: 15}}/>
+          <AiOutlineMenu style={{color: "#0CE0FF", width: 15, height: 15,}}/>
         </BurgerHold>
        </Wrapper>
             {UserData ? <>{nav?(<DashHeader/>):""}</> :   <>

@@ -20,7 +20,7 @@ const SideNav = ({setNav}) =>{
             <H2>OKX EXCHANGE</H2>
         <Button data-aos="fade-left" onClick={()=>{
                 setNav(false);
-            }}  style={{border: "none", background: "none", width: 50, height: 50, color: "black"}}> X
+            }}  style={{border: "none", background: "none", width: 50,  color: "black"}}> X
             </Button>
             </Wrapp>
                 <MidNav>
@@ -116,8 +116,8 @@ const Button = styled.button`
 `;
 const H2 = styled.div`
 font-size: 25px;
- font-weight: 400;
- margin-left: 10px;
+ font-weight: bold;
+ margin-left: 5px;
 `
 const Container = styled.div`
     width: 83%;

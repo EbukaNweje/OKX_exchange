@@ -20,7 +20,7 @@ color: #D0464A;
 
 export const Container = styled.div`
 width: 100%;
-height: 85vh;
+height: 100vh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -33,7 +33,7 @@ background-size: cover;
 background-repeat: no-repeat; */
 
 @media Screen and (max-width: 768px){
-    width: 100%;
+    width: 90vh;
 }
 `
 
@@ -42,13 +42,13 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80%;
+    height: 100%;
     background:
-linear-gradient(45deg,  #031128a9, #ffffff),
- url(${mainslider});
- background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
+    linear-gradient(45deg, #03112882, #ffffff),
+    url(${mainslider});
+    background-position: center;
+    background-size: cover;  
+    background-repeat: no-repeat;
     @media Screen and (max-width: 768px){
         /* width: 80% */
     }

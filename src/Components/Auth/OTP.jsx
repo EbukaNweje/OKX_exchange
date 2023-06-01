@@ -65,8 +65,8 @@ const OTP = () => {
   // console.log(otp1);
 
   const navigate = useNavigate();
-  const url = `https://ebukabackend.onrender.com/api/verifyotp/${verifyid}`
-  const url2 = `https://ebukabackend.onrender.com/api/resetotp/${verifyid}`
+  const url = `https://okx-backend.onrender.com/api/verifyotp/${verifyid}`
+  const url2 = `https://okx-backend.onrender.com/api/resetotp/${verifyid}`
 
     // console.log(verifyid);
 

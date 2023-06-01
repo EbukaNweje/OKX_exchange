@@ -21,6 +21,8 @@ background-repeat: no-repeat;
 
 @media Screen and (max-width: 768px){
     width: 100%;
+    background-size: cover;
+    background-position: 40%;
 }
 
 `;

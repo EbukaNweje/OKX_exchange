@@ -16,14 +16,14 @@ const NewDashboard = () => {
 
   const [modal, setModal] = useState(false)
   const [state, setState] = useState({
-    value: "https://preeminentcrypfield.com/",
+    value: "https://okx-backend.onrender.com/",
     copied: false,
   });
 
 
 const [data, setData] = useState()
   const {userid} = useParams()
-  const url = `https://ebukabackend.onrender.com/api/userdata/${userid}`
+  const url = `https://okx-backend.onrender.com/api/userdata/${userid}`
 
   useEffect(() =>{
     axios.get(url).then(res => setData(res.data.data))

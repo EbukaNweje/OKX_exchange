@@ -52,8 +52,8 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     background:
-linear-gradient(45deg,  #031128a9, #ffffff),
- url(${mainslider});
+    linear-gradient(45deg,  #031128a9, #ffffff),
+    url(${mainslider});
  background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
