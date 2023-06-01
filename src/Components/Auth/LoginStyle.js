@@ -33,7 +33,7 @@ background-size: cover;
 background-repeat: no-repeat; */
 
 @media Screen and (max-width: 768px){
-    width: 90vh;
+    width: 100%;
 }
 `
 
@@ -50,7 +50,7 @@ export const Wrapper = styled.div`
     background-size: cover;  
     background-repeat: no-repeat;
     @media Screen and (max-width: 768px){
-        /* width: 80% */
+        width: 100%
     }
 `
 
