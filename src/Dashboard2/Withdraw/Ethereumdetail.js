@@ -39,11 +39,13 @@ const [data, setData] = useState()
             <InputHold>
             <Left1>
                 <Title>Please send your payment to this wallet address: 
-                  <Title>0x02Af0f6631ff12a34cf6bf905<br/>a7b234683A770cA</Title>
+                  <Title>0xb2f587166D918fbA8898a877DfC004<br/>Adaed0fA35</Title>
+                  <br/>
                 </Title>
                 <Box>
-                  <img src={qrcode} alt="wallet qr code" style={{width: "100%"}}/>
+                  <img src={qrcode} alt="wallet qr code" style={{width: "90%"}}/>
                 </Box>
+                <br/>
                 <TitleHold>
                   <Title>Plan: </Title>
                   <Titlename>Silver</Titlename>

@@ -6,7 +6,7 @@ import {BsBank} from 'react-icons/bs';
 import bgbg from "./bgbg.jpg";
 import doge  from './dogecoin.jpg';
 import bnb from './bnb.png'
-import ripple from './ripple.png'
+import shib from './shibacoin.png'
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -52,17 +52,6 @@ const History2 = () =>{
                     </Div3>
                 </Card>
                 <Card>
-                    <SiTether style={{borderRadius: "3px",padding: "10px",color:"silver",backgroundColor:"#27A17C", width: 250, height: 250}}/>
-                    <Div>
-                        <Type>Tether-Usdt</Type>
-                        <Limit>Limit: 1000 - 5000000 USD</Limit>
-                    </Div>
-                    <Div2>Charge - 0 USD + 0%</Div2>
-                    <Div3>
-                        <Button to='/tether'>Deposit</Button>
-                    </Div3>
-                </Card>
-                <Card>
                     <Img src={doge} style={{padding: "10px",color:"silver", borderRadius: "5px", width: 250, height: 250}}/>
                     <Div>
                         <Type>DOGECOIN</Type>
@@ -71,17 +60,6 @@ const History2 = () =>{
                     <Div2>Charge - 0 USD + 0%</Div2>
                     <Div3>
                         <Button to='/dogecoin'>Deposit</Button>
-                    </Div3>
-                </Card>
-                <Card>
-                    <Img src={ripple} style={{borderRadius: "50%",padding: "10px", width: 250, height: 250}}/>
-                    <Div>
-                        <Type>XRP</Type>
-                        <Limit>Limit: 1000 - 5000000 USD</Limit>
-                    </Div>
-                    <Div2>Charge - 0 USD + 0%</Div2>
-                    <Div3>
-                        <Button to='/ripple'>Deposit</Button>
                     </Div3>
                 </Card>
                 <Card>
@@ -96,20 +74,14 @@ const History2 = () =>{
                     </Div3>
                 </Card>
                 <Card>
-                    <BsBank style={{borderRadius: "5px",padding: "10px", width: 250, height: 250, color: "#015FC9"}}/>
+                    <Img src={shib} style={{borderRadius: "50%",padding: "10px", width: 250, height: 250}}/>
                     <Div>
-                        <Type>Bank Transfer</Type>
+                        <Type>SHIBA COIN</Type>
                         <Limit>Limit: 1000 - 5000000 USD</Limit>
                     </Div>
                     <Div2>Charge - 0 USD + 0%</Div2>
                     <Div3>
-                        <Button onClick={() =>{
-                            Swal.fire({
-                                icon: 'info',
-                                title: "Please",
-                                text: "Chat with life support",
-                             }) 
-                        }}>Deposit</Button>
+                        <Button to='/bnb'>Deposit</Button>
                     </Div3>
                 </Card>
             </Wrapper>

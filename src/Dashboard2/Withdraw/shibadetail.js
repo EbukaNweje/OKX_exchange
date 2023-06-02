@@ -5,9 +5,9 @@ import {AiFillHome} from 'react-icons/ai'
 import bgbg from './bgbg.jpg';
 import {Link, useParams} from "react-router-dom";
 import axios from 'axios';
-import qrcode from "./bt1.jpg"
+import qrcode from "./shbid.jpg"
 
-const WalletId = () => {
+const ShibaDetail = () => {
 
 
 const [data, setData] = useState()
@@ -39,11 +39,13 @@ const [data, setData] = useState()
             <InputHold>
             <Left1>
                 <Title>Please send your payment to this wallet address: 
-                  <Title>bc1qydugjsmyzvvmupqa80scjralk9j<br/>cpn4ktj2l92</Title>
+                  <Title>0xb2f587166D918fbA8898a877DfC004A<br/>daed0fA35</Title>
+                  <br/>
                 </Title>
                 <Box>
-                  <img src={qrcode} alt="wallet qr code" style={{width: "100%"}}/>
+                  <img src={qrcode} alt="wallet qr code" style={{width: "90%"}}/>
                 </Box>
+                <br/>
                 <TitleHold>
                   <Title>Plan: </Title>
                   <Titlename>Silver</Titlename>
@@ -90,11 +92,11 @@ const [data, setData] = useState()
   )
 }
 
-export default WalletId;
+export default ShibaDetail;
 
 const Box = styled.div`
 width: 100%;
-height: 40%;
+height: 300px;
 /* background-color: red; */
 margin: 30px 0;
 display: flex;
