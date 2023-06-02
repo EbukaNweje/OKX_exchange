@@ -16,7 +16,7 @@ const NewDashboard = () => {
 
   const [modal, setModal] = useState(false)
   const [state, setState] = useState({
-    value: "https://okx-backend.onrender.com/",
+    value: "http://okxexchange.org/",
     copied: false,
   });
 
