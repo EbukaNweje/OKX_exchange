@@ -1,14 +1,14 @@
 import React from "react";
 import styled from 'styled-components';
 import {FaBitcoin, FaEthereum, FaDollarSign} from 'react-icons/fa';
-import {SiTether} from 'react-icons/si';
-import {BsBank} from 'react-icons/bs';
+// import {SiTether} from 'react-icons/si';
+// import {BsBank} from 'react-icons/bs';
 import bgbg from "./bgbg.jpg";
 import doge  from './dogecoin.jpg';
 import bnb from './bnb.png'
 import shib from './shibacoin.png'
 import { Link } from "react-router-dom";
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 
 const History2 = () =>{
 
