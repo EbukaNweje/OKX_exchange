@@ -41,6 +41,7 @@ import RestPassword from './Components/Auth/RestPassword';
 import SendWithdrawReq from './Dashboard2/SendWithdraw';
 import Hero2 from './Components/LandingPage/EthScroll';
 import AdminLogin from "./AdminLogin"
+import UpdateUser from "./Updateuser"
 const App = () => {
   return (
     <BrowserRouter>
@@ -68,6 +69,7 @@ const App = () => {
         <Route path="/Howreg" element={<Howreg />} />
         <Route path="/newsdetail" element={<NewsDetailPage />} />
         <Route path="/adminLogin" element={<AdminLogin />} />
+        <Route path="/updateUser" element={<UpdateUser />} />
         <Route element={<Private />}>
           <Route path="/dashboard/:userid" element={<Dashboard2 />} />
           <Route path="/walletpage" element={<WalletPage />} />

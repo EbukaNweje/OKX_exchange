@@ -24,7 +24,7 @@ const AdminLogin = () => {
             title: 'Success!',
             text: "Welcome back!",
          }) ;
-         navigate("/updateuser")
+         navigate("/updateUser")
     }
     }
 
