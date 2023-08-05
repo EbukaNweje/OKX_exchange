@@ -5,16 +5,12 @@ import {FaBitcoin, FaEthereum, FaDollarSign} from 'react-icons/fa';
 // import {BsBank} from 'react-icons/bs';
 import bgbg from "./bgbg.jpg";
 import doge  from './dogecoin.jpg';
-import bnb from './bnb.png'
+// import bnb from './bnb.png'
 import shib from './shibacoin.png'
 import { Link } from "react-router-dom";
 // import Swal from "sweetalert2";
 
 const History2 = () =>{
-
-    // const user = JSON.parse(localStorage.getItem("User"));
-
-
     return(
         <Container>
             <Dash>
@@ -62,7 +58,7 @@ const History2 = () =>{
                         <Button to='/dogecoin'>Deposit</Button>
                     </Div3>
                 </Card>
-                <Card>
+                {/* <Card>
                     <Img src={bnb} style={{borderRadius: "50%",padding: "10px", width: 250, height: 250}}/>
                     <Div>
                         <Type>BNB</Type>
@@ -72,7 +68,7 @@ const History2 = () =>{
                     <Div3>
                         <Button to='/bnb'>Deposit</Button>
                     </Div3>
-                </Card>
+                </Card> */}
                 <Card>
                     <Img src={shib} style={{borderRadius: "50%",padding: "10px", width: 250, height: 250}}/>
                     <Div>
@@ -81,7 +77,7 @@ const History2 = () =>{
                     </Div>
                     <Div2>Charge - 0 USD + 0%</Div2>
                     <Div3>
-                        <Button to='/bnb'>Deposit</Button>
+                        <Button to='/shibadetail'>Deposit</Button>
                     </Div3>
                 </Card>
             </Wrapper>

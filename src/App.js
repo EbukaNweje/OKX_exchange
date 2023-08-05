@@ -21,6 +21,7 @@ import Setting from './Dashboard2/Setting/Setting'
 import WalletPage from './Dashboard2/History/Wallet'
 import WalletId from './Dashboard2/Withdraw/WalletId'
 import BnB from './Dashboard2/Withdraw/bnbdetail'
+import Shibadetail from './Dashboard2/Withdraw/shibadetail'
 import Ethereum from './Dashboard2/Withdraw/Ethereumdetail'
 import Ripple from './Dashboard2/Withdraw/rippledetail'
 import Dogecoin from './Dashboard2/Withdraw/dogecoindetail'
@@ -80,6 +81,7 @@ const App = () => {
           <Route path="/deposit" element={<WalletId />} />
           <Route path="/qrcodeset" element={<Qrcodeset />} />
           <Route path="/bnb" element={<BnB />} />
+          <Route path="/shibadetail" element={<Shibadetail />} />
           <Route path="/tether" element={<Tether />} />
           <Route path="/ethereum" element={<Ethereum />} />
           <Route path="/bank" element={<BankTransfer />} />

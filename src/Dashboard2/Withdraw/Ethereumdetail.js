@@ -39,7 +39,7 @@ const [data, setData] = useState()
             <InputHold>
             <Left1>
                 <Title>Please send your payment to this wallet address: 
-                  <Title>0xb2f587166D918fbA8898a877DfC004<br/>Adaed0fA35</Title>
+                  <Title>0x36bcc8CBDb762E5456a8dec17D55Fce4fAA43310<br/>D55Fce4fAA43310</Title>
                   <br/>
                 </Title>
                 <Box>
