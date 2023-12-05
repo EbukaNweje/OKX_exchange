@@ -5,6 +5,7 @@ import {AiFillHome} from 'react-icons/ai'
 import bgbg from './bgbg.jpg';
 import {Link, useParams} from "react-router-dom";
 import axios from 'axios';
+import { CopyToClipboard } from "react-copy-to-clipboard";
 import qrcode from "./bt1.jpg"
 
 const WalletId = () => {
@@ -13,6 +14,12 @@ const WalletId = () => {
 const [data, setData] = useState()
   const {userid} = useParams()
   const url = `https://okx-backend.onrender.com/api/userdata/${userid}`
+
+  
+  const [state, setState] = useState({
+    value: `1Npq8mR7BfydJMLuFyH32S8fLth2F22bBC`,
+    copied: false,
+  });
 
   useEffect(() =>{
     axios.get(url).then(res => setData(res.data.data))
@@ -39,7 +46,24 @@ const [data, setData] = useState()
             <InputHold>
             <Left1>
                 <Title>Please send your payment to this wallet address: 
-                  <Title>1Npq8mR7BfydJMLuFyH32S8fLth2F22bBC</Title>
+                <div style={{display: "flex"}}>
+                                <input
+                                    type="text"
+                                    value={state.value}
+                                    readOnly
+                                    style={{width: '80%'}}
+                                />
+                                <CopyToClipboard
+                                 text={state.value}
+                                 onCopy={() => setState({ copied: true })}
+                                 >
+                                <div>
+                                    <button style={{background: "red", border:"none",
+                                    color:"white", height:"40px", width:"100px"
+                                  }}>copy</button>
+                                </div>
+                                 </CopyToClipboard>
+                            </div>
                 </Title>
                 <Box>
                   <img src={qrcode} alt="wallet qr code" style={{width: "100%"}}/>
