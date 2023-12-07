@@ -190,11 +190,6 @@ console.log("p",passwordError, "PE", passwordErrorlow, "Pu", passwordErrorUpper,
           setButtonDisabled(isButtonDisabled);
           setError({ero: true, msg: error.data.message})
       });
-      // Perform form submission logic here
-        // console.log('submitted to Api');
-        // setButtonDisabled(!isButtonDisabled);
-        // console.log(email, password, username)
-        // navigate("/userDashboard")
       }else {
         setError({ero: true, msg: "Form validation failed"});
         setTimeout(() => {
