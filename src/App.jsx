@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from './components/Header/Header'
+import Header from './components/Header/Header';
 import {HashRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from './components/LandingPage/LandingPages';
 import Signup from './components/Auth/SignUp';
 import Login from "./components/Auth/logindiv/Login"
 import About from "./components/AboutPage/AboutPage"
-import Dashboard from './components/dashboard/DashBoard/DashBoard';
-import Confirmation from "./components/dashboard/DashBoard/ConfirmDeposit/Confirmation"
+// import Dashboard from './components/dashboard/DashBoard/DashBoard';
+// import Confirmation from "./components/dashboard/DashBoard/ConfirmDeposit/Confirmation"
 import ForgetpassWord from "./components/Auth/ForgetPassword/ForgetPassword"
 import NewPassword from "./components/Auth/NewPassword/NewPassword"
 import ScrollToTop from '../ScrollToTop';
@@ -32,8 +32,8 @@ const App = () => {
       <Route path='/sendrequest' element={<Sendrequest/>}/>
       <Route path='/admin' element={<Adim/>}/>
       <Route path='/resetpassword' element={<NewPassword/>}/>
-      <Route path='/userDashboard/:id' element={<Dashboard/>}/>
-      <Route path='/ConfirmDeposit/:id/:paymentmathod' element={<Confirmation/>}/>
+      {/* <Route path='/userDashboard/:id' element={<Dashboard/>}/>
+      <Route path='/ConfirmDeposit/:id/:paymentmathod' element={<Confirmation/>}/> */}
 
       </Routes>
       {/* <Footer/> */}
