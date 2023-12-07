@@ -1,147 +1,282 @@
-import styled  from "styled-components";
+import styled from 'styled-components';
+import {Link} from 'react-router-dom'
 
-export const HeaderBody = styled.div`
+export const Container = styled.div`
+width: 100%;
+height: 110px;
+// background-color:  #111D32;
+background: linear-gradient(45deg, #015ec9,  #a60a0a);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+/* display: none; */
+@media Screen and (max-width: 768px){
+    height: 70px;
     width: 100%;
-    height: 10vh;
-    background: #08080C;
+    background: linear-gradient(45deg, #111D32,#000911ef);;
+
+}
+
+`;
+export const Wrapper = styled.div`
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 85%;
+background: linear-gradient(45deg, #111D32,#000911c3);
+@media Screen and (max-width: 768px){
+    background: none;
+}
+`;
+export const Wrapper1 = styled.div`
+width: 100%;
+/* background-color: #BF1E24; */
+background-color: #16243D;
+display: flex; 
+align-items: center;
+justify-content: center;
+height: 30%;
+
+@media Screen and (max-width: 768px){
+    display: none;
+}
+
+
+`;
+export const NavDiv = styled.div`
+position: fixed;
+height: 50vh;
+width: 100%;
+display: flex;
+align-items: center;
+bottom: 100px;
+top: 0;
+left: 0;
+z-index: 500;
+
+
+@media Screen and (max-width: 768px){
+    width: 92%;
+    top: 250px;
+}
+
+`;
+export const BurgerHold = styled.button`
+width : 45px;
+height: 45px;
+display: none;
+@media Screen and (max-width: 768px){
+    display: block;
+    background-color: #16243dc2;
+    width: 45px;
+    height: 30px;
     display: flex;
-    justify-content: space-between;
-    position: fixed;
-    z-index: 10000;
-
-    @media(max-width: 414px) {
-      height: 7vh;
-  }
-  
-  
-  @media(max-width: 999px) {
-      height: 12vh;
-  }
-
-`
-export const HeaderLeft = styled.div`
-  width: 60%;
-  height: 100%;
-  /* background: red; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`
-
-export const Logo = styled.img`
-    width: 15%;
-    height: 50%;
-    margin-left: 5%;
-    margin-right: 10px;
-
-    @media(max-width: 414px) {
-      width: 50%;
-    }
-
-    @media(max-width: 999px) {
-      width: 50%;
-  }
-`
-
-export const Nav = styled.div`
-    width: 88%;
-    height: 70%;
-    /* background: green; */
-    display: flex;
+    justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    border: none;
+    outline:none;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-right: 50px;
+}
+`;
+export const Header1 = styled.div`
+width: 75%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100%;
+`
+export const Left = styled.div`
+height: 100%;
+width: 30%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+`
+export const Right = styled.div`
+height: 100%;
+width: 35%;
+display: flex;
+justify-content: space-between;
+align-items: center;
 
-    @media(max-width: 414px) {
-      display: none
-    }
+@media Screen and (max-width: 768px){
+    background-color: red;
+}
 
-    @media(max-width: 999px) {
-      display: none;
+`
+export const A = styled.div`
+/* background-color: lightcoral; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 50%;
+width: auto;
+`;
+export const Icon = styled.div`
+color: #018ACA;
+display: flex;
+justify-content: center;
+align-items: center;
+
+:hover{
+    cursor: pointer;
+    transition: all 2s;
+}
+`;
+export const SocialHold = styled.div`
+width: 40%;
+/* background-color: papayawhip; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+`;
+export const SocialIcon = styled.div`
+color: aliceblue;
+:hover{
+    cursor: pointer;
+    transition: all 2s;
+}
+`;
+export const Header2 = styled.div`
+height: 100%;
+width: 78%;
+/* background: gainsboro; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-right: 30px;
+
+
+@media Screen and (max-width: 768px){
+    width: 85%;
+    justify-content: space-between;
+    height: 70px;
+}
+
+`;
+export const LogoHold = styled.div`
+width: 40%;
+height: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+@media Screen and (max-width: 768px){
+    width: 35%;
+    height: auto;
+    margin-left: 30px;
+}
+`;
+export const Logo = styled.img`
+width: 50%;
+height: 30%;
+margin-top: 20px;
+
+@media Screen and (max-width: 768px){
+width: 150px;
+height: 50px;
+margin-left: 50px;
+margin-top: 0px;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
-`
+}
+`;
 
-// export const NavTextBody = styled.div`
-//     width: max-content;
-//     height: 100%;
-//     /* background: #000; */
-//     color: rgb(255, 255, 255);
-//     display: flex; 
-//     align-items: center;
-//     font-family: Inter, arial, sans-serif;
-//     font-size: 14px;
-//     font-weight: 500;
-//     line-height: 22px;
-//     margin-left: 15px;
-//     justify-content: center;
-//     cursor: pointer;
-    
-//     :hover{
-//         background-color: aliceblue;
+export const NavHold = styled.div`
+width: 70%;
+background-color: #0F192C;
+border-radius: 0.3rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0.2rem 0 0.2rem 1rem;
+height: 40%;
+@media Screen and (max-width: 768px){
+    display: none;
+}
+`;
+export const Nav = styled(Link)`
+color: whitesmoke;
+font-size: 13px;
+font-weight: 400;
+font-family: sans-serif;
+text-decoration: none;
+:hover{
+    cursor: pointer;
+    transition: all 2s;
+}
+`;
+export const Login = styled(Link)`
+border: none;
+outline: none;
+background: none;
+color: aliceblue;
+font-size: 13px;
+font-weight: bold;
+cursor: pointer;
+transition: all 350ms;
+text-decoration: none;
+`;
+export const SignUp = styled(Link)`
+padding: 0.7rem 1.5rem;
+font-size: 13px;
+font-weight: bold;
+color: aliceblue;
+border: none;
+outline: none;
+border-radius: 0 0.3rem 0.3rem 0;
+/* border-radius: 0.3rem; */
+background-color: #015FC9;
+text-decoration: none;
 
-//     }
-//     svg:hover{
-//         background-color: aliceblue;  
-//     }
+:hover{
+    cursor: pointer;
+    /* background: transparent; */
+}
+`;
+export const ContactHold = styled.div`
+width: 18%;
+display: flex;
+justify-content: space-between;
+align-items: center;
 
-    
-// `
+@media Screen and (max-width: 768px){
+    display: none;
+}
 
-export const HeaderRight = styled.div`
-  width: 17%;
-  height: 100%;
-  /* background: blue;  */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+`;
+export const CallIcon = styled.div`
+width: 50px;
+height: 50px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid #45395b;
+`;
+export const ContDiv = styled.div`
 
-  @media(max-width: 414px) {
-      width: 50%;
-      justify-content: flex-end;
-      margin-right: 5%;
-    }
+`;
+export const P = styled.div`
+color: #45395b;
+font-size: 18px;
+font-weight: bold;
+`;
+export const Line = styled.div`
+width: 1px;
+height: 100%;
+background-color: aliceblue;
+`;
 
-  @media screen and  (max-width: 688px) {
-      width: 40%
-    }
-`
-
-export const HeaderButton = styled.button`
-  width: ${({ wd }) => (wd ? '30%' : '35%')};
-  height: 35px;
-  background: red;
-  cursor: pointer;
-  margin: 0px 5px;
-  border-radius: 5px;
-  background-color: ${({cl})=> (cl ? "black" : "#eabe4d")};
-  color: ${({cl})=> (cl ? "white" : "black")};
-  transition: all 360ms;
-  border: ${({cl})=> (cl ? "solid 1px rgba(255, 255, 255, 0.575);" : "none")};
-    
-  &:hover,
-  &:focus{
-    background:  ${({cl})=> (cl ? "black" : "#e5ad1f")};
-    border: ${({cl})=> (cl ? "solid 1px rgba(255, 255, 255, 0.373);" : "none")}
-  }
-
-  @media(max-width: 414px) {
-        display: ${({cl})=> (cl ? "none" : "block")};
-        width:40%;
-    }
-
-@media(max-width: 999px) {
-  display: ${({cl})=> (cl ? "none" : "block")};
-  width:40%;
- }
-` 
-
-export const HeaderMobileDiv = styled.div`
-  width: 100%;
-  height: 100vh;
-  background: rgb(16, 16, 16);
-  position: fixed;
-  top: 12%;
-`
-
-// export const HeaderBody = styled.div`
-
-// `
-
+// background-image: linear-gradient(to right, #aa05a8, #212121);
