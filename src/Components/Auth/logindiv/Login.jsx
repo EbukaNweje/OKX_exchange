@@ -14,8 +14,8 @@ import { LoginContainer, LoginWrapper, LoginText,LoginHeader,
 import LastFoter from '../../Footer/LastFoter';
 import axios from 'axios'
 import {BeatLoader} from "react-spinners"
-import { alluserdata }from "../../Global/ProductState"
-import { useDispatch } from "react-redux";
+// import { alluserdata }from "../../Global/ProductState"
+// import { useDispatch } from "react-redux";
 
 function Login() {
     const [show, setShow] = useState(true)
@@ -24,7 +24,7 @@ function Login() {
     const [email, setEmail] = useState()
     const [password, setPassword] = useState("")
     const [isButtonDisabled, setButtonDisabled] = useState(false);
-    const dispatch = useDispatch()
+    // const dispatch = useDispatch()
   const navigate = useNavigate();
 
   
@@ -89,7 +89,7 @@ const validateEmail = (input) => {
         localStorage.setItem("User", JSON.stringify(res.data));
         LoginEmailSand()
         const getId = JSON.parse(localStorage.getItem("User"))
-        dispatch(alluserdata(res.data))
+        // dispatch(alluserdata(res.data))
         console.log(getId._id)
           setTimeout(() => {
             window.location = `https://Okxcrypfield-dashboard.vercel.app/#/${getId._id}`

@@ -14,8 +14,7 @@ import { SignupContainer, SignupWrapper, SignupText,SignupHeader,
  import Footer from "../Footer/FooterSection"
 import LastFoter from '../Footer/LastFoter';
 import axios from 'axios'
-import { alluserdata }from "../Global/ProductState"
-import { useDispatch } from "react-redux";
+// import { alluserdata }from "../Global/
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css'; // optional
 //  import { ToastContainer, toast } from 'react-toastify';
@@ -41,7 +40,7 @@ const [emailError, setEmailError] = useState('');
 const [usernameError, setUsernameError] = useState('');
 const [error, setError] = useState({ero: false, msg: ""});
 const [isButtonDisabled, setButtonDisabled] = useState(false);
-const dispatch = useDispatch()
+// const dispatch = useDispatch()
 
 const validateEmail = (input) => {
     // Regular expression for basic email validation
@@ -175,7 +174,7 @@ console.log("p",passwordError, "PE", passwordErrorlow, "Pu", passwordErrorUpper,
         localStorage.setItem("User", JSON.stringify(res.data));
         signupEmailSand()
         const getId = JSON.parse(localStorage.getItem("User"))
-        dispatch(alluserdata(res.data.data))
+        // dispatch(alluserdata(res.data.data))
         console.log("this is the data", getId.data._id)
           setTimeout(() => {
             window.location = `https://whitebitcrypfield-dashboard.vercel.app/#/${getId.data._id}}`
