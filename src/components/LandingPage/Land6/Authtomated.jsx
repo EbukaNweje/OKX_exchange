@@ -6,12 +6,12 @@ import {
 } from './Land6Style';
 import {GiCash, GiHandOk} from 'react-icons/gi'
 import {FaFileSignature, FaScroll} from 'react-icons/fa'
-import arr from '../../../assets/arr.png'
-import arr2 from '../../../assets/arr2.png'
+// import arr from '../../../assets/arr.png'
+// import arr2 from '../../../assets/arr2.png'
 import phoneillus from '../../../assets/phone-illus.png'
-import bg1 from '../../../assets/bg.png'
-import bg2 from '../../../assets/bg5.png'
-import bg3 from '../../../assets/bg4.png'
+// import bg1 from '../../../assets/bg.png'
+// import bg2 from '../../../assets/bg5.png'
+// import bg3 from '../../../assets/bg4.png'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
@@ -25,9 +25,9 @@ const Authtomated = () => {
     <Wrap>
     <LeftDiv>
     <Trade>
-        <Img src={arr} alt='arr left'/>
+        {/* <Img src={arr} alt='arr left'/> */}
         <h4>AUTOMATED</h4>
-        <Img src={arr2} alt='arr right'/>
+        {/* <Img src={arr2} alt='arr right'/> */}
     </Trade>
     <H1>100% Fully Automated Binary<br/> Trading Software.</H1>
     <P>Trade and earn with Preeminent crypfield VIP multichain decentralized exchange</P>
@@ -58,9 +58,9 @@ const Authtomated = () => {
     </LeftDiv>
     <RightDiv>
         <BgImg data-aos="fade-up" src={phoneillus} alt='phone illustration'/>
-        <NewBg src={bg1}/>
+        {/* <NewBg src={bg1}/>
         <NewBg2 src={bg2}/>
-        <NewBg3 src={bg3}/>
+        <NewBg3 src={bg3}/> */}
     </RightDiv>
     </Wrap>
     </Wrapper>

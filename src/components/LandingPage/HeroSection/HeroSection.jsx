@@ -1,6 +1,6 @@
 import React from 'react'
 import "./HeroSection.css"
-import barcelona from "../../../assets/barcelona.png"
+// import barcelona from "../../../assets/barcelona.png"
 import { useNavigate } from 'react-router-dom'
 
 
@@ -12,7 +12,7 @@ const HeroSection = () => {
             <section className="Hero-holder">
                 <div className="Hero-holder-wrap">
                 <div className="Hero-right">
-                        <div className="image-url"><img src={barcelona} alt="TopImage" /></div>
+                        {/* <div className="image-url"><img src={barcelona} alt="TopImage" /></div> */}
                  </div>
 
                     <div className="Hero-left">

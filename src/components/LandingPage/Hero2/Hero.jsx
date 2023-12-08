@@ -3,7 +3,7 @@ import {
     Container, LeftDiv, H4, H1, Content, Line,ButtonHold,
     KnowMore, Arrow, RightDiv, Wrapper, Img, Content1
 } from "./Hero2style";
-import bg2 from '../../../assets/bg44.svg'
+// import bg2 from '../../../assets/bg44.svg'
 import { NavLink } from 'react-router-dom'
 
 const Hero = () => {
@@ -22,7 +22,7 @@ const Hero = () => {
                 </ButtonHold>
         </LeftDiv>
         <RightDiv>
-          <Img src={bg2} alt='bg'/>
+          {/* <Img src={bg2} alt='bg'/> */}
         </RightDiv>
         </Wrapper>
     </Container>
