@@ -1,45 +1,34 @@
-import React from 'react'
-// import Header from './components/Header/Header';
-import {HashRouter, Route, Routes } from 'react-router-dom';
-import LandingPage from './components/LandingPage/LandingPages';
-import Signup from './components/Auth/SignUp';
-import Login from "./components/Auth/logindiv/Login"
-import About from "./components/AboutPage/AboutPage"
-import Dashboard from './components/dashboard/DashBoard/DashBoard';
-import Confirmation from "./components/dashboard/DashBoard/ConfirmDeposit/Confirmation"
-import ForgetpassWord from "./components/Auth/ForgetPassword/ForgetPassword"
-import NewPassword from "./components/Auth/NewPassword/NewPassword"
-import ScrollToTop from '../ScrollToTop';
-import Faq from "./components/FAQ/Faq"
-import Privacy from './components/FAQ/Privacy';
-import Referral from './components/FAQ/Referral';
-import Sendrequest from "./components/FAQ/Sendrequest"
-import Adim from "./components/Updateuser/Oldfile/Updateuser"
-const App = () => {
-  return (
-    <HashRouter>
-      <ScrollToTop/>
-      {/* <Header/> */}
-      <Routes>
-      <Route path='/' element={<LandingPage/>}/>
-      <Route path='/about' element={<About/>}/>
-      <Route path='/signup' element={<Signup/>}/>
-      <Route path='/login' element={<Login/>}/>
-      <Route path='/forgotpassword' element={<ForgetpassWord/>}/>
-      <Route path='/faq' element={<Faq/>}/>
-      <Route path='/privacy' element={<Privacy/>}/>
-      <Route path='/referral' element={<Referral/>}/>
-      <Route path='/sendrequest' element={<Sendrequest/>}/>
-      <Route path='/admin' element={<Adim/>}/>
-      <Route path='/resetpassword' element={<NewPassword/>}/>
-      <Route path='/userDashboard/:id' element={<Dashboard/>}/>
-      <Route path='/ConfirmDeposit/:id/:paymentmathod' element={<Confirmation/>}/>
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
-      </Routes>
-      {/* <Footer/> */}
-      {/* <LastFoter/> */}
-    </HashRouter>
-   
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
   )
 }
 
