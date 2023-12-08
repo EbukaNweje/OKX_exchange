@@ -7,7 +7,7 @@ import {MainContainer, DashBoardBody,DashBoardBodyContainer,DashBoardBodyContain
     MobileSpan, DiskTopMenu, MobileNavMenu, ContainerLeftMenuNavMobile,ContainerLeftMenuNavCardmobile,
     ContainerLeftMenuNavCardBoxMobile, CloseSpanButton,Starting, LogoOut
 } from "./DashBoardStyle"
-import logo from "../../../assets/Icon.jpeg"
+// import logo from "../../../assets/Icon.jpeg"
 import Withdrawal from './Withdrawal/Withdrawal'
 import {BiSolidUserCircle} from "react-icons/bi"
 import {GrMoney} from "react-icons/gr"
