@@ -1,17 +1,17 @@
 import styled from "styled-components";
-import mainbg from '../../../Assets/mainbg.png'
+// import mainbg from '../../../Assets/mainbg.png'
 
 export const Container = styled.div`
 width: 100%;
 height: auto;
-background-image: url(${mainbg});
+background: black;
 background-size: auto;
 background-repeat: no-repeat;
 background-position: left;
 background-color: black;
 `;
 export const Wrapper = styled.div`
-background-color: #16243D;
+background-color: #181834;
 opacity: 98%;
 height: 100%;
 display: flex;
@@ -20,10 +20,10 @@ align-items: center;
 padding: 8rem 0;
 
 @media Screen and (max-width: 768px){
-    padding: 0 0 50rem 0
+    padding: 10rem 0 50rem 0
 }
 @media Screen and (max-width: 500px){
-    padding: 0 0 25rem 0
+    padding: 4rem 0 25rem 0
 }
 
 `;
@@ -60,7 +60,7 @@ align-items: center;
 export const Box= styled.div`
 width: 45%;
 background-color: #0F192C;
-background:linear-gradient(45deg, #015ec989,  #a60a0a8f);
+background:linear-gradient(45deg, #E5AD1F,  #a60a0a8f);
 height: 11rem;
 display: flex;
 flex-direction: column;
@@ -175,7 +175,7 @@ color: lightgrey;
 margin-bottom: 40px;
 `;
 export const P = styled.div`
-color: #2A203B;
+color: white;
 `;
 export const P2 = styled.div`
 color: #2A203B;
