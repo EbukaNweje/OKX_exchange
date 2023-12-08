@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {HeaderBody, HeaderLeft, HeaderRight, Logo, Nav, HeaderButton, HeaderMobileDiv } from "../Header/HeaderStyle"
-import LogoImg  from  "../../assets/logo.svg"
+// import LogoImg  from  "../../assets/logo.svg"
 // import {IoIosArrowDown} from "react-icons/io"
 // import {BsFillCreditCardFill} from "react-icons/bs"
 import {AiOutlineMenuFold, AiOutlineClose} from "react-icons/ai"
