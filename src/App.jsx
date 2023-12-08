@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from './components/Header/Header';
+// import Header from './components/Header/Header';
 import {HashRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from './components/LandingPage/LandingPages';
 import Signup from './components/Auth/SignUp';
@@ -19,7 +19,7 @@ const App = () => {
   return (
     <HashRouter>
       <ScrollToTop/>
-      <Header/>
+      {/* <Header/> */}
       <Routes>
       <Route path='/' element={<LandingPage/>}/>
       <Route path='/about' element={<About/>}/>
